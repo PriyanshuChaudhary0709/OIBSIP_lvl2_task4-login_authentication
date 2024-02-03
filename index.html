@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login and Sign Up Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">LogIn</span>
+
+                <form action="" name="loginForm" onsubmit="loginValidation()">
+                    <div class="input-field">
+                        <input type="text" name="email" placeholder="Enter Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" name="password" placeholder="Enter Password">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logcheck">
+                            <label for="logcheck" class="text">Remember me</label>
+                        </div>
+
+                        <a href="#">Forgot Password</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="submit" value="Login">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">New Account?</span>
+                    <a href="#" class="text signup-link">Sign Up</a>
+                </div>
+            </div>
+
+            <div class="form signup" onsubmit="signUpValidation()">
+                <span class="title">Sign Up </span>
+                <form name="SignUpform">
+                    <div class="input-field">
+                        <input type="text" name="name" placeholder="Name">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" name="email" placeholder="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" name="password" placeholder="Create Password">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+
+                    <div class="input-field" id="confirmPass">
+                        <input type="password" name="password" placeholder="Confirm Password">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="termCon">
+                            <label for="termCon" class="text ">I agree to the Terms and Conditions.</label>
+                        </div>
+
+                        <div class="input-field button">
+                            <input type="submit" value="signup">
+                        </div>
+                </form>
+                <div class="login-signup">
+                    <span class="text">Have an account?
+                        <a href="#" class="text login-link">Login Now</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
